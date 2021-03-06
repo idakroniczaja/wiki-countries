@@ -1,7 +1,11 @@
-import React from 'react';
+import React from 'react'
 import './App.css';
+import countries from './countries.json'
+import { Route, Link , Switch} from 'react-router-dom';
 import axios from 'axios';
 
+
+import Navbar from './components/Navbar';
 
 class App extends React.Component {
   state = {
@@ -33,6 +37,13 @@ class App extends React.Component {
     )
   })}
 </ol>
+
+<div className="App">
+<Navbar/>
+</div>
+
+
+
 
 
 
